@@ -45,3 +45,21 @@ img {
     height: auto;
     margin-bottom: 10px;
 }
+
+.headshot{
+    max-height: 30vh;
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    max-height:800px;
+    height: 50vh;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    height: 100%;
+  }
