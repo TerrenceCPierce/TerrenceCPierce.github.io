@@ -195,33 +195,58 @@
 
         <section id="gallery">
             <h2>Gallery</h2>
-            <div class="scroll-container">
-                <!-- Add images of yourself or your work -->
-                <img src="Images/terrence-pierce-presenting.jpg"
-                    alt="Terrence Pierce Presenting AMS">
-                <img src="Images/Terrence-Pierce-Motor-Working.jpg"
-                    alt="Terrence Pierce Working on Motor">
-                <img src="Images/Team-Elephante-Robot.jpg"
-                    alt="Team Elephante Robot">
-                <img src="Images/Terrence-Pierce-Dynamics.jpg"
-                    alt="Terrence Pierce in Dynamics Class">
-                <img src="Images/Fluids-Manometer.jpg"
-                    alt="Fluids Mechanics Research Manometer">
+            <div class="slideshow-container">
 
-                <!-- Add more as needed -->
-            </div>
+                <div class="mySlides fade">
+                <div class="gallery-img-container">
+                  <img class = "gallery-img" src="Images/terrence-pierce-presenting.jpg"></div>
+
+                  <div class="gallery-text">Presenting at 2023 AMS</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="gallery-img-container">
+
+                  <img class = "gallery-img" src="Images/Terrence-Pierce-Motor-Working.jpg"></div>
+                  <div class="gallery-text">Working on motors</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="gallery-img-container">
+
+                  <img class = "gallery-img" src="Images/Team-Elephante-Robot.jpg"></div>
+                  <div class="gallery-text">Water Mission Over Terrain Vehicle</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="gallery-img-container">
+
+                    <img class = "gallery-img" src="Images/Terrence-Pierce-Dynamics.jpg"></div>
+                    <div class="gallery-text">Working in Dynamics Class</div>
+                  </div>
+
+                <div class="mySlides fade">
+                    <div class="gallery-img-container">
+                    <img class = "gallery-img" src="Images/Fluids-Manometer.jpg"></div>
+                    <div class="gallery-text">Reading a Manometer for Fluids Research</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
         </section>
 
         <footer>
             <p>Contact: 
                 <ul>
-                <li><a href="#" class="cryptedmail"
+                <li><a href="#" class="crypted"
                 data-name="tpierce2"
                 data-domain="terpmail.umd"
                 data-tld="edu"
                 onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></li>
 
-                <li><a href="#" class="cryptedmail"
+                <li><a href="#" class="crypted"
                 data-name="terrencecpierce"
                 data-domain="gmail"
                 data-tld="com"
@@ -232,3 +257,32 @@
 
     </body>
 </html>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
