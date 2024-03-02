@@ -63,3 +63,22 @@ div.scroll-container {
     padding: 10px;
     height: 100%;
   }
+
+  div.exp-section{
+    padding: 10px;
+
+  }
+
+  div.exp-location{
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  div.exp-date{
+    font-style: italic;
+    text-align: right;
+  }
+
+  div.exp-title{
+
+  }
