@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="Images/Lightmode_TPGear.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: light)">
+        <link href="Images/TPGear_darkmode.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Terrence Pierce - Home Page</title>
+        <meta NAME="description"
+            CONTENT="I am a researcher with 3 years of experience and over 4 years of industry-level coding experience pursuing my B.S. in Mechanical Engineering.">
+        <meta property="og:site_name" content="Terrence Pierce" />
+        <meta property="og:url" content="https://www.TerrencePierce.com" />
+        <meta property="og:type" content="website" />
+        <meta name="title" property="og:title"
+            content="Terrence Pierce - Home Page" />
+        <meta name="image" property="og:image"
+            content="https://TerrencePierce.com/Images/Terrence-Pierce-Headshot.JPG" />
+        <meta name="image" property="og:image:secure_url"
+            content="https://TerrencePierce.com/Images/Terrence-Pierce-Headshot.JPG" />
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="twitter:card" content="summary_large_image" />
+        <!--<meta name="twitter:site" description="@username" /> -->
+        <meta name="twitter:title" content="Terrence Pierce - Home Page" />
+        <meta name="twitter:description"
+            content="I am a researcher with 3 years of experience and over 4 years of industry-level coding experience pursuing my B.S. in Mechanical Engineering." />
+        <meta name="twitter:image:src"
+            content="https://TerrencePierce.com/Images/Terrence-Pierce-Headshot.JPG">
+        <meta name="twitter:domain" content="https://www.TerrencePierce.com">
+    </head>
+    <body>
+
+        <header>
+            <h1>Terrence Pierce</h1>
+            <p>Engineer | Researcher | Scientist</p>
+            <img class="headshot" src="Images/Terrence-Pierce-Headshot.JPG"
+                alt="Headshot">
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a researcher with 3 years of experience and over 4
+                years of industry-level coding experience. Through experience
+                with Vaisala and the Atmospheric Electricity Research Team at
+                the University of Maryland (UMD), I have gained a wealth of
+                experience
+                working with large lightning data and streamlining efficient
+                algorithms. I gave an oral presentation on machine
+                learning-related lightning research at 2023 AMS and was awarded
+                an honorable mention across all graduate and undergraduate
+                students for my presentation. I conduct research for the UMD
+                Space Power and Propulsion Lab where I code MATLAB simulations
+                pertaining to plasma-material interactions under Dr. Jarred
+                Young. I am part of the Fan Module and Boundary Layer subteams
+                on a Fluids Mechanics Education project led by Dr. Kenneth
+                Kiger. As the UMD XPrize initiative to prevent forest fires
+                ramps
+                up, I am part of the detector design team. I am currently
+                pursuing my B.S. in Mechanical Engineering at the University of
+                Maryland with an undergraduate GPA of 3.98 and a major GPA of
+                4.00.
+            </p>
+        </section>
+
+        <footer>
+            <p>Contact: 
+                <ul>
+                <li><a href="#" class="crypted"
+                data-name="tpierce2"
+                data-domain="terpmail.umd"
+                data-tld="edu"
+                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></li>
+
+                <li><a href="#" class="crypted"
+                data-name="terrencecpierce"
+                data-domain="gmail"
+                data-tld="com"
+                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></li>
+            </ul>
+             </p>
+        </footer>
+
+    </body>
+</html>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
