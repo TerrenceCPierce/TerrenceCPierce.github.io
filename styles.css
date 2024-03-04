@@ -221,5 +221,15 @@ img {
 
 .bullet{
     list-style-type: circle;
- 
+    list-style-position: inside;
+
 }
+
+.div-container {
+    padding-left: 10px;
+}
+/*
+.bullet-container {
+    padding-left: 25px;
+}
+*/
