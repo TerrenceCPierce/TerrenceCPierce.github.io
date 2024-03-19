@@ -69,7 +69,7 @@ div.exp-section {
 
 }
 
-div.exp-location {
+div.section-subheader {
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -78,8 +78,6 @@ div.exp-date {
     font-style: italic;
     text-align: right;
 }
-
-div.exp-title {}
 
 .crypted:after {
     content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
@@ -233,3 +231,15 @@ img {
     padding-left: 25px;
 }
 */
+
+.int-topic {
+    padding-bottom: 10px;
+}
+
+.int-section {
+    padding-bottom: 10px
+}
+
+.int-description{
+    padding-left: 10px;
+}
