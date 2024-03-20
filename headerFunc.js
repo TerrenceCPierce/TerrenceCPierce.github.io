@@ -60,8 +60,8 @@ document.addEventListener("keydown", (e) => {
     setAriaExpandedFalse();
   }
 });
-
 // toggle hamburger menu
-hamburgerBtn.addEventListener("click", toggleHamburger);
-
+window.addEventListener("load", (event) => {
+    hamburgerBtn.addEventListener("click", toggleHamburger);
+});
 //https://codepen.io/evavic44/pen/QWZYEPQ
