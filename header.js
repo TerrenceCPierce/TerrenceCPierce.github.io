@@ -65,7 +65,7 @@ let appHeader = `
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
-                                        href="https://terrencepierce.com/#AERT">AERT</a>
+                                        href="#AERT">AERT</a>
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
@@ -111,7 +111,7 @@ let appHeader = `
                 <!-- <i class="bx bx-menu" aria-hidden="true"></i> -->
                 <div id="menuToggle">
 
-                    <input type="checkbox" />
+                    <input type="checkbox" id ="myCheck"/>
                     
                     <span></span>
                     <span></span>

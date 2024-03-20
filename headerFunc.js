@@ -6,6 +6,8 @@ const links = document.querySelectorAll(".dropdown a");
 
 function setAriaExpandedFalse() {
   dropdownBtn.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+  //document.getElementById("myCheck").checked = false;
+
 }
 
 function closeDropdownMenu() {
@@ -44,6 +46,7 @@ links.forEach((link) =>
     closeDropdownMenu();
     setAriaExpandedFalse();
     toggleHamburger();
+    document.getElementById("myCheck").checked = false;
   })
 );
 
@@ -63,5 +66,6 @@ document.addEventListener("keydown", (e) => {
 // toggle hamburger menu
 window.addEventListener("load", (event) => {
     hamburgerBtn.addEventListener("click", toggleHamburger);
+    document.getElementById("myCheck").checked = false;
 });
 //https://codepen.io/evavic44/pen/QWZYEPQ
