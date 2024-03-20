@@ -65,7 +65,7 @@ let appHeader = `
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
-                                        href="#AERT">AERT</a>
+                                        href="https://TerrencePierce.com/#AERT">AERT</a>
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
