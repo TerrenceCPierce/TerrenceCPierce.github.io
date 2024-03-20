@@ -36,7 +36,7 @@
     <body>
 
         <div id="app-header"></div>
-        <script async src="https://TerrencePierce.com/header.js"></script>
+        <script src="https://TerrencePierce.com/header.js"></script>
 
         <section id="about">
             <h2>About Me</h2>
@@ -65,37 +65,34 @@
 
         <footer id="app-footer"></footer>
         <script async src="https://TerrencePierce.com/footer.js"></script>
-
-
+        <script defer>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "flex";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <script src="https://TerrencePierce.com/headerFunc.js" defer></script>
     </body>
 </html>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "flex";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-<script src="https://TerrencePierce.com/headerFunc.js" defer></script>
