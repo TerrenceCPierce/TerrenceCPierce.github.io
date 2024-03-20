@@ -1,6 +1,13 @@
 let appHeader = `
 <header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="nav-bar-container">
+<a id = "home-btn" href="https://TerrencePierce.com/">
+
+    <button class="btn"><i class="fa fa-home"></i></button> </a>
+
     <div class="container">
+
         <div class="nav-start">
             <nav class="menu">
                 <ul class="menu-bar">
@@ -118,6 +125,7 @@ let appHeader = `
                     <span></span>
             </button>
         </div>
+    </div>
     </div>
 </header>
 

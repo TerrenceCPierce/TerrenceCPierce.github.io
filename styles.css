@@ -253,8 +253,14 @@ img {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     column-gap: 2rem;
+    height: 90px;
+    padding: 1.2rem 3rem 0rem 3rem;
+    justify-content: space-between;
+  }
+  .nav-bar-container {
+    display: flex;
+    align-items: center;
     height: 90px;
     padding: 1.2rem 3rem 0rem 3rem;
   }
@@ -403,6 +409,10 @@ img {
   }
   
   @media (max-width: 1100px) {
+    .nav-bar-container {
+      justify-content: space-between;
+    }
+
     #hamburger {
       display: block;
     }
@@ -497,7 +507,7 @@ img {
     color: var(--white);
     text-align: center;
     padding: 0.6rem 1.4rem;
-    font-size: 1rem;
+    font-size: 3.5rem;
     font-weight: 500;
     border-radius: 5px;
   }
@@ -590,8 +600,8 @@ img {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: 1.2rem;
-  right: 1rem;
+  top: 2rem;
+  right: 4rem;
   
   cursor: pointer;
   
@@ -601,3 +611,6 @@ img {
   -webkit-touch-callout: none;
 }
 
+#home-btn {
+  color:white;
+}
