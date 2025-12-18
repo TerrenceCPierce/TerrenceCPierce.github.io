@@ -72,6 +72,14 @@ let appHeader = `
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
+                                        href="https://TerrencePierce.com/#Tubaldi">Tubaldi Lab</a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="dropdown-link"
+                                        href="https://TerrencePierce.com/#NIST">NIST</a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="dropdown-link"
                                         href="https://TerrencePierce.com/#AERT">AERT</a>
                                 </li>
                                 <li role="menuitem">
@@ -85,10 +93,6 @@ let appHeader = `
                                 <li role="menuitem">
                                     <a class="dropdown-link"
                                         href="https://terrencepierce.com/#VIP">VIP Fluids Project</a>
-                                </li>
-                                <li role="menuitem">
-                                    <a class="dropdown-link"
-                                        href="https://terrencepierce.com/#XPrize">XPrize</a>
                                 </li>
                             </ul>
                             <ul role="menu">

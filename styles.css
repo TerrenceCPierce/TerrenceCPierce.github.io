@@ -616,3 +616,15 @@ img {
 #home-btn {
   color:white;
 }
+
+.exp-section {
+  position: relative;
+}
+
+.exp-section::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ccc;
+  margin: 0.5em 0;
+}
