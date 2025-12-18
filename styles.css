@@ -211,16 +211,26 @@ img {
     }
 }
 
-.gallery-img {
+img.gallery-img {
     object-fit: contain;
     max-width: 100%;
     height: 100%;
     margin: 0;
 }
 
+iframe.gallery-img {
+    max-width: 80%;
+    height: 100%;
+}
+#landscape.gallery-img {
+        aspect-ratio: 16 / 9;
+
+}
+
 .gallery-img-container{
     margin-bottom: 30px;
     text-align: center;
+    width:100%
 }
 
 .bullet{
