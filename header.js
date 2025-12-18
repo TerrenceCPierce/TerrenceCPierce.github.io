@@ -76,6 +76,10 @@ let appHeader = `
                                 </li>
                                 <li role="menuitem">
                                     <a class="dropdown-link"
+                                        href="https://TerrencePierce.com/#ThermaHive">ThermaHive</a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="dropdown-link"
                                         href="https://TerrencePierce.com/#NIST">NIST</a>
                                 </li>
                                 <li role="menuitem">

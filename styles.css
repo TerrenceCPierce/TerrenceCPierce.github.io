@@ -621,10 +621,28 @@ img {
   position: relative;
 }
 
-.exp-section::after {
+.exp-section:not(.last-item)::after {
   content: "";
   display: block;
   height: 1px;
   background: #ccc;
   margin: 0.5em 0;
+}
+
+#Conference\ Publications ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+#Oral\ Presentations ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+#Poster\ Presentations ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
